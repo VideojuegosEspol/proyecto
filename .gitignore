@@ -1,19 +1,19 @@
 # Created by https://www.gitignore.io/api/unity
 
 ### Unity ###
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
-# /[Aa]ssets/AssetStoreTools*
+[Aa]ssets/AssetStoreTools*
 
 # TextMesh Pro files
 [Aa]ssets/TextMesh*Pro/
@@ -63,44 +63,3 @@ crashlytics-build.properties
 *.dwlt
 
 # End of https://www.gitignore.io/api/unity
-*.pdb
-ProjectSettings/ProjectVersion.txt
-Library/TilemapEditorUserSettings.asset
-Library/StateCache/SceneView/743850-mainStage.json
-Library/StateCache/Hierarchy/3d46c5-mainStage.json
-Library/SpriteAtlasDatabase.asset
-Library/shadercompiler-UnityShaderCompiler.exe0.log
-Library/ShaderCache/EditorEncounteredVariants
-Library/ScriptMapper
-Library/ScriptAssemblies/Unity.Timeline.pdb
-Library/ScriptAssemblies/Unity.Timeline.Editor.pdb
-Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Library/ScriptAssemblies/Unity.Timeline.dll
-Library/ScriptAssemblies/Unity.TextMeshPro.pdb
-Library/ScriptAssemblies/Unity.TextMeshPro.Editor.pdb
-Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Library/ScriptAssemblies/Unity.CollabProxy.Editor.pdb
-Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.pdb
-Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
-Library/ScriptAssemblies/BuiltinAssemblies.stamp
-Library/SceneVisibilityState.asset
-Library/metadata/d0/d0e302e369ade3a41a14734807634b93.info
-Library/metadata/d0/d0e302e369ade3a41a14734807634b93
-Library/metadata/b2/b2970256882c28a4aad77a6c78380f09.info
-Library/metadata/b2/b2970256882c28a4aad77a6c78380f09
-Library/metadata/9d/9da9a851aefca4876973ae6ce3673604
-Library/metadata/5e/5e59e9b3faaa14674b04d8b3d6e459d4
-Library/metadata/57/57d86d603068b7a4fb5e8371525468e6.info
-Library/metadata/57/57d86d603068b7a4fb5e8371525468e6
-Library/metadata/4a/4aa808395242eca4099471e7c6753045.info
-Library/metadata/4a/4aa808395242eca4099471e7c6753045
-Library/metadata/39/395a39ea7ec574518a32f790b9eff4db
-Library/metadata/03/03f1177f95ae549268e47e1701c1fd57
-Library/LastSceneManagerSetup.txt
-Library/expandedItems
-Library/CurrentLayout.dwlt
-Library/assetDatabase3
-*.asset
-*.json
