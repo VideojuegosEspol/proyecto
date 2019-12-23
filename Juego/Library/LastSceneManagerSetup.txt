@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/IntroWorld.unity
+- path: Assets/Scenes/AirWorld.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
