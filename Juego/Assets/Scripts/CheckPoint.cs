@@ -15,6 +15,7 @@ public class CheckPoint : MonoBehaviour
     {
         if (collision.CompareTag("Player")) //Se activa el CheckPoint si colisiona con el jugador
         {
+            SoundManager.PlaySound("Save");
             gm.lastCheckPoint = transform.position;
         }
     }

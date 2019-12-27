@@ -5,7 +5,9 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
 
-    public static AudioClip choqueFuego, DisparoFuego, INFERNAL, MuerteBoss, PowerUp,Vida;
+    public static AudioClip choqueFuego, DisparoFuego, INFERNAL, 
+                            MuerteBoss, PowerUp,Vida, aplastar,
+                            tornado, Save;
     static AudioSource audioSrc;
 
     // Start is called before the first frame update
@@ -17,16 +19,14 @@ public class SoundManager : MonoBehaviour
         MuerteBoss = Resources.Load<AudioClip>("MuerteBoss");
         PowerUp = Resources.Load<AudioClip>("PowerUpMedallon");
         Vida = Resources.Load<AudioClip>("Vida");
+        aplastar = Resources.Load<AudioClip>("Aplastar");
+        tornado = Resources.Load<AudioClip>("Tornado");
+        Save = Resources.Load<AudioClip>("Save");
 
         audioSrc = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     public static void PlaySound(string clip)
     {
         switch (clip){
@@ -47,6 +47,15 @@ public class SoundManager : MonoBehaviour
                 break;
             case "Vida":
                 audioSrc.PlayOneShot(Vida);
+                break;
+            case "Aplastar":
+                audioSrc.PlayOneShot(aplastar);
+                break;
+            case "Tornado":
+                audioSrc.PlayOneShot(tornado);
+                break;
+            case "Save":
+                audioSrc.PlayOneShot(Save);
                 break;
         }
     }
