@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BossFuego : MonoBehaviour
 {
-    public float Vida;
+    [SerializeField]
+    public static float Vida;
     float dirX;
     [SerializeField]
     public float moveSpeed; //Vlocidad del Boss
