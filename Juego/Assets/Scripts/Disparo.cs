@@ -9,23 +9,22 @@ public class Disparo : MonoBehaviour
     public float damage; //Daño que recibe el jugador.
     //Player target; //Este debe ser el objeto Ninja del juego
     Vector2 moveDirection;
-    
+    public int x;
     // Start is called before the first frame update
     void Start()
     {
         rB = GetComponent<Rigidbody2D>();
-        //target = GameObject.FindObjectOfType<Player>();
-        //moveDirection = (target.transform.position - transform.position).normalized * moveSpeed;
+        //target = GameObject.FindFindObjectOfType<Player>();
+        moveDirection = new Vector2(x, 0.0f)* moveSpeed;
         rB.velocity = new Vector2(moveDirection.x, moveDirection.y);
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, 1f);
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.name.Equals("Player"))
-        {
+        if (col.CompareTag("Player")){
             //PlayerLife.life -=damage;
-            Destroy(gameObject);
+            Destroy(this.gameObject);
 
         }
     }

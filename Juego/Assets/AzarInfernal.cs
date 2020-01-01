@@ -20,8 +20,7 @@ public class AzarInfernal : StateMachineBehaviour
     {
         if (timer <= 0)
         {
-            animator.SetBool("isAtk", true);
-            //SoundManager.PlaySound("INFERNAL");
+            animator.SetTrigger("Atk1");
         }
         else
         {

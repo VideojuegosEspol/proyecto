@@ -8,6 +8,7 @@ TagManager:
   - GM
   - Tornado
   - Abismo
+  - Boss
   layers:
   - Default
   - TransparentFX
