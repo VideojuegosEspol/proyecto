@@ -10,6 +10,7 @@ TagManager:
   - Abismo
   - Boss
   - Sword
+  - Vida
   layers:
   - Default
   - TransparentFX
