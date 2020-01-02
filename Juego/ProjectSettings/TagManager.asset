@@ -9,6 +9,7 @@ TagManager:
   - Tornado
   - Abismo
   - Boss
+  - Sword
   layers:
   - Default
   - TransparentFX

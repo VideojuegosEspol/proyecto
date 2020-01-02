@@ -16244,6 +16244,7 @@ MonoBehaviour:
   controller: {fileID: 1397116328}
   animator: {fileID: 1397116326}
   runSpeed: 40
+  sword: {fileID: 0}
 --- !u!114 &1397116328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16509,6 +16510,7 @@ MonoBehaviour:
   controller: {fileID: 1450700675}
   animator: {fileID: 1450700673}
   runSpeed: 40
+  sword: {fileID: 1504799198}
 --- !u!114 &1450700675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17008,11 +17010,11 @@ GameObject:
   - component: {fileID: 1504799200}
   m_Layer: 8
   m_Name: SwordCollider
-  m_TagString: Untagged
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1504799199
 Transform:
   m_ObjectHideFlags: 0
