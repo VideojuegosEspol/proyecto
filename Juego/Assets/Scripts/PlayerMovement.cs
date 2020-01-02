@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class PlayerMovement : MonoBehaviour
     float HorizontalMove = 0f;
 
     bool jump = false;
+
+    public GameObject sword;
+
+
     // Start is called before the first frame update
 
     // Update is called once per frame
@@ -26,9 +31,13 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
             animator.SetBool("IsJumping",true);
         }if(Input.GetButtonDown("Fire2")){
+            
             animator.SetBool("IsAttacking",true);
+            sword.SetActive(true);
+            
         }if(Input.GetButtonUp("Fire2")){
             animator.SetBool("IsAttacking",false);
+            sword.SetActive(false);
         }
 
 
