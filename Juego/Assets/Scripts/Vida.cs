@@ -10,7 +10,7 @@ public class Vida : MonoBehaviour
         {            
             SoundManager.PlaySound("Vida");
             //Aqui iria la variable vida del Player 
-            //PlayerLife.life = 100; //Aumentamos a 100 (vida completa)
+            PlayerMovement.life = 100; //Aumentamos a 100 (vida completa)
             Destroy(transform.gameObject);
         }
     }

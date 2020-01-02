@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject sword;
 
+    public static int life = 100; 
+
 
     // Start is called before the first frame update
 
@@ -27,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
 
         HorizontalMove = Input.GetAxisRaw("Horizontal")*runSpeed; 
         animator.SetFloat("Speed",Mathf.Abs(HorizontalMove));
+
+
         if (Input.GetButtonDown("Jump")){
             jump = true;
             animator.SetBool("IsJumping",true);
@@ -46,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
     public void OnLanding(){
 
         animator.SetBool("IsJumping",false);
+        
 
     }
 
@@ -56,5 +61,22 @@ public class PlayerMovement : MonoBehaviour
         jump=false;
 
     }
+
+
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(collision.name);
+        if (collision.name == "Collider_Enemy")
+        {            
+            Debug.Log("asS");
+            // SoundManager.PlaySound("Vida");
+            // //Aqui iria la variable vida del Player 
+            // //PlayerLife.life = 100; //Aumentamos a 100 (vida completa)
+            // Destroy(transform.gameObject);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+
 
 }
