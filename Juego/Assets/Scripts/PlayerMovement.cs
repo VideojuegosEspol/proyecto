@@ -25,6 +25,10 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump")){
             jump = true;
             animator.SetBool("IsJumping",true);
+        }if(Input.GetButtonDown("Fire2")){
+            animator.SetBool("IsAttacking",true);
+        }if(Input.GetButtonUp("Fire2")){
+            animator.SetBool("IsAttacking",false);
         }
 
 

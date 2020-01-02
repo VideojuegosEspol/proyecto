@@ -16565,8 +16565,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0000009536743, y: -0.039253652}
-  m_Size: {x: 0.7435093, y: 1.6463443}
+  m_Offset: {x: 0.29869366, y: -0.039253652}
+  m_Size: {x: 1.0488415, y: 1.6463443}
   m_Direction: 0
 --- !u!50 &1450700677
 Rigidbody2D:
@@ -16650,6 +16650,7 @@ Transform:
   m_Children:
   - {fileID: 471923060}
   - {fileID: 1025273866}
+  - {fileID: 1504799199}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16995,6 +16996,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1504799198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1504799199}
+  - component: {fileID: 1504799200}
+  m_Layer: 8
+  m_Name: SwordCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1504799199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504799198}
+  m_LocalRotation: {x: -0.008584062, y: 0.0056530735, z: -0.5462601, w: 0.8375526}
+  m_LocalPosition: {x: -0.17, y: -0.61, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1450700679}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -0.47, y: 1.08, z: -66.23}
+--- !u!70 &1504799200
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504799198}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
 --- !u!1 &1521178250
 GameObject:
   m_ObjectHideFlags: 0
