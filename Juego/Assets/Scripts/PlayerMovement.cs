@@ -84,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private evaluate(){
+    private void evaluate(){
 
         if(life<=0){
 
