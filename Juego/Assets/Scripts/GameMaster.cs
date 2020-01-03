@@ -11,7 +11,7 @@ public class GameMaster : MonoBehaviour
     {
         if (instance == null){
             instance = this;
-            DontDestroyOnLoad(instance); //Ayuda a no reestablecer toda la info almacenada del juego
+            DontDestroyOnLoad(instance); //Ayuda a no reestablecer toda la info almacenada del juego            
         }
         else
         {

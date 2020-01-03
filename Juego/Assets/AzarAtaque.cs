@@ -9,17 +9,13 @@ public class AzarAtaque : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        rand = Random.Range(0, 4);
-        if (rand == 0)
+        rand = Random.Range(0, 3);
+        if (rand ==0)
         {
-            animator.SetBool("isAtkFinal",true);
-        }else if (rand == 1)
+            animator.SetTrigger("Infernal");
+        }else
         {
-            animator.SetBool("isAtk", true);
-        }
-        else
-        {
-            animator.SetBool("isWalking", true);
+            animator.SetTrigger("Atk1");
         }
     }
 

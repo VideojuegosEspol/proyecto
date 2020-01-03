@@ -6,13 +6,15 @@ public class DisparoEnemy : MonoBehaviour
 {
     [SerializeField]
     GameObject bullet;
-    public float VelocidadFuego;
-    public float NextFire;
+
+    public float velocidadFuego;
+    float nextFire;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //velocidadFuego = 1f;
+        nextFire = Time.time;
     }
 
     // Update is called once per frame
@@ -24,10 +26,11 @@ public class DisparoEnemy : MonoBehaviour
     //Comprueba el tiempo del ultimo disparo dado.
     void CheckIfTimeToFire()
     {
-        if (Time.time > NextFire)
+        if (Time.time > nextFire)
         {
+            //Instanciamos la bala
             Instantiate(bullet, transform.position, Quaternion.identity);
-            NextFire = Time.time + VelocidadFuego;
+            nextFire = Time.time + velocidadFuego;
         }
     }
 }

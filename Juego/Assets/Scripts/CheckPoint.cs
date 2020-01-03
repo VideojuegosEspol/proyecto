@@ -11,9 +11,10 @@ public class CheckPoint : MonoBehaviour
     {
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>(); 
     }
-    void OnTriggerEnter2D(Collider2D collision)
+
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.CompareTag("Player")) //Se activa el CheckPoint si colisiona con el jugador
+        if (other.CompareTag("Player")) //Se activa el CheckPoint si colisiona con el jugador
         {
             SoundManager.PlaySound("Save");
             gm.lastCheckPoint = transform.position;

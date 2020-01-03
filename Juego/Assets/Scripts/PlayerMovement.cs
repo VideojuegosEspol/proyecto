@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,6 +14,12 @@ public class PlayerMovement : MonoBehaviour
     float HorizontalMove = 0f;
 
     bool jump = false;
+
+    public GameObject sword;
+
+    public static int life = 100; 
+
+
     // Start is called before the first frame update
 
     // Update is called once per frame
@@ -22,10 +29,25 @@ public class PlayerMovement : MonoBehaviour
 
         HorizontalMove = Input.GetAxisRaw("Horizontal")*runSpeed; 
         animator.SetFloat("Speed",Mathf.Abs(HorizontalMove));
+
+
         if (Input.GetButtonDown("Jump")){
             jump = true;
             animator.SetBool("IsJumping",true);
+        }if(Input.GetButtonDown("Fire2")){
+            
+            animator.SetBool("IsAttacking",true);
+            sword.SetActive(true);
+            
+        }if(Input.GetButtonUp("Fire2")){
+            animator.SetBool("IsAttacking",false);
+            sword.SetActive(false);
         }
+
+        Debug.Log(life);
+
+
+        
 
 
     }
@@ -33,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
     public void OnLanding(){
 
         animator.SetBool("IsJumping",false);
+        
 
     }
 
@@ -43,5 +66,33 @@ public class PlayerMovement : MonoBehaviour
         jump=false;
 
     }
+
+
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(collision.name);
+        if (collision.name == "Collider_Enemy")
+        {            
+            //Debug.Log("asS");
+            // SoundManager.PlaySound("Vida");
+            // //Aqui iria la variable vida del Player 
+            // //PlayerLife.life = 100; //Aumentamos a 100 (vida completa)
+            // Destroy(transform.gameObject);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            life -=10;
+        }
+    }
+
+    private evaluate(){
+
+        if(life<=0){
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+    }
+
+
 
 }

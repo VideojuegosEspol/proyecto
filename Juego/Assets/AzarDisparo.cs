@@ -19,7 +19,7 @@ public class AzarDisparo : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (timer <= 0) {
-            animator.SetBool("isAtkFinal", true);
+            animator.SetTrigger("Infernal");
         }
         else
         {

@@ -7,6 +7,10 @@ TagManager:
   - Floor
   - GM
   - Tornado
+  - Abismo
+  - Boss
+  - Sword
+  - Vida
   layers:
   - Default
   - TransparentFX

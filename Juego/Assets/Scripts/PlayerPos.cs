@@ -13,10 +13,18 @@ public class PlayerPos : MonoBehaviour
         transform.position = gm.lastCheckPoint;
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Abismo")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         //Aqui debe entrar un if cuando el player muera para cargar CheckPoint
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+    }*/
 }
