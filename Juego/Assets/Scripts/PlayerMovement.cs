@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject sword;
 
-    public static int life = 100; 
+    public static float life = 100; 
 
 
     // Start is called before the first frame update
@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
             sword.SetActive(false);
         }
 
-        Debug.Log(life);
+        //Debug.Log(life);
 
 
         
@@ -69,26 +69,29 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log(collision.name);
-        if (collision.name == "Collider_Enemy")
-        {            
-            //Debug.Log("asS");
-            // SoundManager.PlaySound("Vida");
-            // //Aqui iria la variable vida del Player 
-            // //PlayerLife.life = 100; //Aumentamos a 100 (vida completa)
-            // Destroy(transform.gameObject);
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            life -=10;
-        }
-    }
+    // void OnTriggerEnter2D(Collider2D collision)
+    // {
+    //     Debug.Log(collision.name);
+    //     if (collision.name == "Collider_Enemy")
+    //     {            
+    //         //Debug.Log("asS");
+    //         // SoundManager.PlaySound("Vida");
+    //         // //Aqui iria la variable vida del Player 
+    //         // //PlayerLife.life = 100; //Aumentamos a 100 (vida completa)
+    //         // Destroy(transform.gameObject);
+    //         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    //         evaluate();
+    //     }
+    // }
 
-    private void evaluate(){
+    public static void evaluate(){
 
         if(life<=0){
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            life=100;
+        }else{
+            life-=10;
         }
 
     }
