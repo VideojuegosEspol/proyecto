@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject sword;
 
-    public static float life = 100; 
+    public static float life = 300; 
 
 
     // Start is called before the first frame update
@@ -36,13 +36,14 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IsJumping",true);
         }if(Input.GetButtonDown("Fire2")){
             
-            animator.SetBool("IsAttacking",true);
-            sword.SetActive(true);
-            
-        }if(Input.GetButtonUp("Fire2")){
-            animator.SetBool("IsAttacking",false);
-            sword.SetActive(false);
+            //animator.SetBool("IsAttacking",true);
+            //sword.SetActive(true);
+            StartCoroutine(Attack());
         }
+        // if(Input.GetButtonUp("Fire2")){
+        //     animator.SetBool("IsAttacking",false);
+        //     sword.SetActive(false);
+        // }
 
         //Debug.Log(life);
 
@@ -51,6 +52,15 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
+
+
+    // void Attack(){
+
+    //     animator.SetTrigger("Attack");
+    //     sword.SetActive(false);
+
+    // }
+
 
     public void OnLanding(){
 
@@ -91,6 +101,16 @@ public class PlayerMovement : MonoBehaviour
 
     // }
 
+
+    IEnumerator Attack(){
+
+        sword.SetActive(true);
+        animator.SetTrigger("Attack");
+
+        yield return new WaitForSeconds(0.25f);
+        sword.SetActive(false);
+
+    }
 
     IEnumerator hurtAnimation(){
 

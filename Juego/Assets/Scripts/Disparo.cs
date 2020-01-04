@@ -24,7 +24,9 @@ public class Disparo : MonoBehaviour
     {
         if (col.CompareTag("Player")){
             //PlayerLife.life -=damage;
+            PlayerMovement.life-= damage;
             Destroy(this.gameObject);
+            PlayerMovement.evaluate();
 
         }
     }

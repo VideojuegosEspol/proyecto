@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 46859480}
   m_Layer: 0
   m_Name: ColliderEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5425,7 +5425,7 @@ GameObject:
   - component: {fileID: 72466339}
   m_Layer: 0
   m_Name: ColliderEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5852,7 +5852,7 @@ GameObject:
   - component: {fileID: 200950713}
   m_Layer: 0
   m_Name: GroundDetection
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6472,7 +6472,7 @@ GameObject:
   - component: {fileID: 362560744}
   m_Layer: 0
   m_Name: GroundDetection
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7010,6 +7010,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3029737, y: 0.44371068}
   m_EdgeRadius: 0
+--- !u!1 &422220936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 422220937}
+  m_Layer: 8
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &422220937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422220936}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.343, y: 0.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1450700679}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &433596469
 GameObject:
   m_ObjectHideFlags: 0
@@ -8089,7 +8119,7 @@ GameObject:
   - component: {fileID: 679691298}
   m_Layer: 0
   m_Name: GroundDetection
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8306,7 +8336,7 @@ GameObject:
   - component: {fileID: 711907698}
   m_Layer: 0
   m_Name: GroundDetection
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9999,7 +10029,7 @@ GameObject:
   - component: {fileID: 1049091400}
   m_Layer: 0
   m_Name: ColliderDamage
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15143,7 +15173,7 @@ GameObject:
   - component: {fileID: 1142712141}
   m_Layer: 0
   m_Name: Collider_Morir
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15372,7 +15402,7 @@ GameObject:
   - component: {fileID: 1167568084}
   m_Layer: 0
   m_Name: ColliderDamage
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15549,7 +15579,7 @@ GameObject:
   - component: {fileID: 1276006799}
   m_Layer: 0
   m_Name: Collider_Morir
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16469,6 +16499,7 @@ GameObject:
   - component: {fileID: 1450700674}
   - component: {fileID: 1450700673}
   - component: {fileID: 1450700680}
+  - component: {fileID: 1450700681}
   m_Layer: 8
   m_Name: SNinja_nosword_idle 1
   m_TagString: Player
@@ -16653,6 +16684,7 @@ Transform:
   - {fileID: 471923060}
   - {fileID: 1025273866}
   - {fileID: 1504799199}
+  - {fileID: 422220937}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16668,6 +16700,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e693a00aebb1843bdfe2b287aed487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1450700681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450700672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a1be85a7cc14e2eb508d90dcf379a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 422220937}
+  bulletPrefab: {fileID: 946509376765148604, guid: f6085667a123dc24d9ae7efd03849a59,
+    type: 3}
 --- !u!1 &1451349225
 GameObject:
   m_ObjectHideFlags: 0
@@ -16832,7 +16879,7 @@ GameObject:
   - component: {fileID: 1475805699}
   m_Layer: 0
   m_Name: Collider_Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17616,7 +17663,7 @@ GameObject:
   - component: {fileID: 1596406335}
   m_Layer: 0
   m_Name: Collider_Damage
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17664,6 +17711,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+--- !u!1001 &1635958535
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8462345819694951307, guid: acc810ba8ae364b0684f7aee2c341086,
+        type: 3}
+      propertyPath: m_Name
+      value: explosionEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462345819694951304, guid: acc810ba8ae364b0684f7aee2c341086,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462345819694951304, guid: acc810ba8ae364b0684f7aee2c341086,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462345819694951304, guid: acc810ba8ae364b0684f7aee2c341086,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462345819694951304, guid: acc810ba8ae364b0684f7aee2c341086,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462345819694951304, guid: acc810ba8ae364b0684f7aee2c341086,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462345819694951304, guid: acc810ba8ae364b0684f7aee2c341086,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462345819694951304, guid: acc810ba8ae364b0684f7aee2c341086,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462345819694951304, guid: acc810ba8ae364b0684f7aee2c341086,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462345819694951304, guid: acc810ba8ae364b0684f7aee2c341086,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462345819694951304, guid: acc810ba8ae364b0684f7aee2c341086,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8462345819694951304, guid: acc810ba8ae364b0684f7aee2c341086,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: acc810ba8ae364b0684f7aee2c341086, type: 3}
 --- !u!1 &1644086157
 GameObject:
   m_ObjectHideFlags: 0
@@ -22465,7 +22581,7 @@ GameObject:
   - component: {fileID: 1682563035}
   m_Layer: 0
   m_Name: Collider_Damage
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37965,7 +38081,7 @@ GameObject:
   - component: {fileID: 1818528225}
   m_Layer: 0
   m_Name: ColliderDamage
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38443,7 +38559,7 @@ GameObject:
   - component: {fileID: 1984853357}
   m_Layer: 0
   m_Name: Collider_Morir
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43506,7 +43622,7 @@ GameObject:
   - component: {fileID: 2045309970}
   m_Layer: 0
   m_Name: GroundDetection
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43617,7 +43733,7 @@ GameObject:
   - component: {fileID: 2116564136}
   m_Layer: 0
   m_Name: ColliderEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43719,7 +43835,7 @@ GameObject:
   - component: {fileID: 2133019698}
   m_Layer: 0
   m_Name: Collider_Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43777,7 +43893,7 @@ GameObject:
   - component: {fileID: 2143775696}
   m_Layer: 0
   m_Name: GroundDetection
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
