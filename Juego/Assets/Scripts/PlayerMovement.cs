@@ -112,6 +112,16 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+
+    public void ThrowFireBall(){
+
+
+        animator.SetTrigger("Fire");
+
+
+    }
+
+
     IEnumerator hurtAnimation(){
 
 

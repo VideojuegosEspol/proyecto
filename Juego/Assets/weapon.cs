@@ -12,13 +12,19 @@ public class weapon : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Shoot();
+            PlayerMovement pm = this.GetComponent<PlayerMovement>();
+            pm.ThrowFireBall();
+            StartCoroutine(Shoot());
         }
     }
 
-    void Shoot() {
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
+
+
+
+    IEnumerator Shoot() {
+        yield return new WaitForSeconds(0.6f);
+        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 
 
