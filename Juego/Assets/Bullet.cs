@@ -21,6 +21,27 @@ public class Bullet : MonoBehaviour
         Debug.Log(hitInfo.name );
         Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(gameObject);
+        EnemyDead enemyDead = hitInfo.GetComponent<EnemyDead>();
+        if(enemyDead!= null){
+            enemyDead.Died();
+        }
+
+        if(hitInfo.tag == "Boss"){
+
+            Boss boss = hitInfo.GetComponent<Boss>();
+
+            if(boss.NoHealt()){
+                boss.Died();
+            }else{
+                boss.TakeDamage(25);
+            }
+
+        }
+        
+
+
+
+
         
     }
 

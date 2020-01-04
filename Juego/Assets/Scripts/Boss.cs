@@ -26,14 +26,35 @@ public class Boss : MonoBehaviour
     {
         if (collision.CompareTag("Sword"))
         {
-            health -= 5;
+            TakeDamage(5);
         }
         if (health <= 0)
         {
-            SoundManager.PlaySound("MuerteBoss");
-            transform.parent.gameObject.SetActive(false);
-            Destroy(this.gameObject);
+            Died();
         }
     }
+
+    public void TakeDamage(int lessdamage){
+        health -= lessdamage;
+    }
+
+    public void Died(){
+
+        SoundManager.PlaySound("MuerteBoss");
+        transform.parent.gameObject.SetActive(false);
+        Destroy(this.gameObject);
+
+    }
+
+    public bool NoHealt(){
+
+        if(health<=0){
+            return true;
+        }
+        return false;
+
+    }
+
+
 
 }
