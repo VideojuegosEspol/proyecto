@@ -11,6 +11,7 @@ TagManager:
   - Boss
   - Sword
   - Vida
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 40737944}
   m_Layer: 0
   m_Name: OgroAzul3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5537,7 +5537,7 @@ GameObject:
   - component: {fileID: 142680297}
   m_Layer: 0
   m_Name: OgroAzulMini
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5703,7 +5703,7 @@ GameObject:
   - component: {fileID: 147760010}
   m_Layer: 0
   m_Name: Collider_Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5920,7 +5920,7 @@ GameObject:
   - component: {fileID: 250692309}
   m_Layer: 0
   m_Name: Fantasma3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6308,7 +6308,7 @@ GameObject:
   - component: {fileID: 334693290}
   m_Layer: 0
   m_Name: Poro3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6857,7 +6857,7 @@ GameObject:
   - component: {fileID: 400742919}
   m_Layer: 0
   m_Name: Poro2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8122,7 +8122,7 @@ GameObject:
   - component: {fileID: 683228776}
   m_Layer: 0
   m_Name: Fantasma
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14998,7 +14998,7 @@ GameObject:
   - component: {fileID: 1120246803}
   m_Layer: 0
   m_Name: OgroAzul
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15206,7 +15206,7 @@ GameObject:
   - component: {fileID: 1147394919}
   m_Layer: 0
   m_Name: Poro
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16242,7 +16242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1397116328}
-  animator: {fileID: 1397116326}
+  animator: {fileID: 0}
   runSpeed: 40
   sword: {fileID: 0}
 --- !u!114 &1397116328
@@ -27279,7 +27279,7 @@ GameObject:
   - component: {fileID: 1720896027}
   m_Layer: 0
   m_Name: Fantasma2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43447,7 +43447,7 @@ GameObject:
   - component: {fileID: 2040210756}
   m_Layer: 0
   m_Name: Collider_Damage
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

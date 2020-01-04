@@ -69,29 +69,61 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-    // void OnTriggerEnter2D(Collider2D collision)
-    // {
-    //     Debug.Log(collision.name);
-    //     if (collision.name == "Collider_Enemy")
-    //     {            
-    //         //Debug.Log("asS");
-    //         // SoundManager.PlaySound("Vida");
-    //         // //Aqui iria la variable vida del Player 
-    //         // //PlayerLife.life = 100; //Aumentamos a 100 (vida completa)
-    //         // Destroy(transform.gameObject);
-    //         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    //         evaluate();
+
+
+
+    // IEnumerator OnTriggerEnter2D(Collider2D collision){
+
+    //     Debug.Log(collision.tag);
+    //     if (collision.tag == "Enemy")
+    //     {           
+    //         Debug.Log("holiii");
+    //         //Debug.Log();
+    //         yield return new WaitForSeconds(5);
+    //         animator.SetBool("Player_hurt",true);
+            
+    //         //animation.Stop(""); 
+            
+    //         //evaluate();
     //     }
+
+
+
     // }
+
+
+    IEnumerator hurtAnimation(){
+
+
+        animator.SetBool("IsHurt",true);
+        yield return new WaitForSeconds(0.25f);
+        animator.SetBool("IsHurt",false);
+
+
+
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(collision.tag);
+        if (collision.tag == "Enemy")
+        {           
+            //Debug.Log("holiii");
+            //Debug.Log();
+            //animator.SetBool("IsHurt",true);
+            //yield WaitForSeconds(5);
+            //animation.SetBool("IsHurt",false); 
+            
+            //evaluate();
+            StartCoroutine(hurtAnimation());
+        }
+    }
 
     public static void evaluate(){
 
         if(life<=0){
-
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             life=100;
-        }else{
-            life-=10;
         }
 
     }
