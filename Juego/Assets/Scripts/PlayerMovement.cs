@@ -20,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
     public static float life = 300; 
 
 
+    private bool fireBallSkill = false;
+
+
     // Start is called before the first frame update
 
     // Update is called once per frame
@@ -156,6 +159,17 @@ public class PlayerMovement : MonoBehaviour
             life=100;
         }
 
+    }
+
+
+
+    public bool GetFireSkill(){
+        return fireBallSkill;
+    }
+
+    public void ActivateFireSkill(){
+
+        fireBallSkill = true;
     }
 
 

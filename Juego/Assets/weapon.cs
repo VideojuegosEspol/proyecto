@@ -10,9 +10,9 @@ public class weapon : MonoBehaviour
     // Update is called once per frame
     void Update() 
     {
-        if (Input.GetButtonDown("Fire1"))
+        PlayerMovement pm = GetComponent<PlayerMovement>();
+        if (Input.GetButtonDown("Fire1") && pm.GetFireSkill())
         {
-            PlayerMovement pm = this.GetComponent<PlayerMovement>();
             pm.ThrowFireBall();
             StartCoroutine(Shoot());
         }
