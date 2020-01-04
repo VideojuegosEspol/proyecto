@@ -125,7 +125,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    IEnumerator hurtAnimation(){
+    public IEnumerator hurtAnimation(){
 
 
         animator.SetBool("IsHurt",true);
@@ -136,21 +136,21 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log(collision.tag);
-        if (collision.tag == "Enemy")
-        {           
-            //Debug.Log("holiii");
-            //Debug.Log();
-            //animator.SetBool("IsHurt",true);
-            //yield WaitForSeconds(5);
-            //animation.SetBool("IsHurt",false); 
+    // void OnTriggerEnter2D(Collider2D collision)
+    // {
+    //     Debug.Log(collision.tag);
+    //     if (collision.tag == "Enemy")
+    //     {           
+    //         //Debug.Log("holiii");
+    //         //Debug.Log();
+    //         //animator.SetBool("IsHurt",true);
+    //         //yield WaitForSeconds(5);
+    //         //animation.SetBool("IsHurt",false); 
             
-            //evaluate();
-            StartCoroutine(hurtAnimation());
-        }
-    }
+    //         //evaluate();
+    //         StartCoroutine(hurtAnimation());
+    //     }
+    // }
 
     public static void evaluate(){
 

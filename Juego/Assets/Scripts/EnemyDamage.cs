@@ -14,6 +14,9 @@ public class EnemyDamage : MonoBehaviour
             //Aqui iria la variable vida del Player 
       //      animator = player.GetComponent<Animator>();
             //PlayerMovement.animator.SetBool("IsJumping",true);
+
+            PlayerMovement playerMovement = collision.GetComponent<PlayerMovement>();
+            StartCoroutine(playerMovement.hurtAnimation());
             PlayerMovement.life -= damage;
             Debug.Log(PlayerMovement.life);
             PlayerMovement.evaluate();

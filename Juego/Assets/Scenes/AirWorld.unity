@@ -391,7 +391,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 857ab2338e9fb79419c49c9f9081897a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 16878e57da2789d4db0476885c8a074a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.099
   m_Pitch: 1
@@ -16598,8 +16598,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.29869366, y: -0.039253652}
-  m_Size: {x: 1.0488415, y: 1.6463443}
+  m_Offset: {x: -0.10188007, y: -0.039253652}
+  m_Size: {x: 0.8986263, y: 1.6463443}
   m_Direction: 0
 --- !u!50 &1450700677
 Rigidbody2D:
