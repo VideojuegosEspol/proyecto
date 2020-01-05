@@ -18,6 +18,7 @@ public class EnemyDamage : MonoBehaviour
             PlayerMovement playerMovement = collision.GetComponent<PlayerMovement>();
             StartCoroutine(playerMovement.hurtAnimation());
             PlayerMovement.life -= damage;
+            HealthBar.Heath = PlayerMovement.life;
             Debug.Log(PlayerMovement.life);
             PlayerMovement.evaluate();
         }
