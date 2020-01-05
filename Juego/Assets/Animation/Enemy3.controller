@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: f00093e33f8d2413e9e6a4cbc3fb5114, type: 2}
+  m_Motion: {fileID: 7400000, guid: 2b83696b5be2940ca88a082e42d37829, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -46,7 +46,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6aa94fd3db937400e9570b65a316c903, type: 2}
+  m_Motion: {fileID: 7400000, guid: 32dc7a57247fd4b92a1edf7c2154fcb8, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -72,7 +72,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: cc83879a2cd124d54ad333787221d544, type: 2}
+  m_Motion: {fileID: 7400000, guid: 4ff9d6f421da04bc8b5808cb8c5315e5, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -120,7 +120,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: f2ee12256b66e4da0a686a6c056be698, type: 2}
+  m_Motion: {fileID: 7400000, guid: 4f0a413912bd549dba17ff57bc6c4688, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -146,7 +146,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 21d05904cc5f6490eb84fab237866058, type: 2}
+  m_Motion: {fileID: 7400000, guid: 59ccd3d1cd32c43c0a0ee55137c04ed6, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -172,7 +172,7 @@ AnimatorStateMachine:
     m_Position: {x: 270, y: 130, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6874972792346386225}
-    m_Position: {x: 305, y: 195, z: 0}
+    m_Position: {x: 300, y: 200, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3451024386313985070}
     m_Position: {x: 340, y: 260, z: 0}
