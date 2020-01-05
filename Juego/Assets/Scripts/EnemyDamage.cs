@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class EnemyDamage : MonoBehaviour
 {
     public float damage;
@@ -18,8 +19,8 @@ public class EnemyDamage : MonoBehaviour
             PlayerMovement playerMovement = collision.GetComponent<PlayerMovement>();
             StartCoroutine(playerMovement.hurtAnimation());
             PlayerMovement.life -= damage;
-            HealthBar.Heath = PlayerMovement.life;
             Debug.Log(PlayerMovement.life);
+            HealthBar.Heath = PlayerMovement.life;
             PlayerMovement.evaluate();
         }
     }
