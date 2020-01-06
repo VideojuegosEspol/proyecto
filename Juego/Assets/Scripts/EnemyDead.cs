@@ -10,6 +10,7 @@ public class EnemyDead : MonoBehaviour
     {
         if (collision.tag == "Sword")
         {
+            Debug.Log("Muerte");
             //aplastar.Play();
             Died();
         }
@@ -17,8 +18,9 @@ public class EnemyDead : MonoBehaviour
 
 
     public void Died(){
-            SoundManager.PlaySound("Aplastar");
-            Destroy(transform.parent.gameObject);
+        Destroy(transform.parent.gameObject);
+        SoundManager.PlaySound("Aplastar");
+            
     }
 
 
