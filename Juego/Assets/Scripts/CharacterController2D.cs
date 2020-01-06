@@ -7,6 +7,7 @@ public class CharacterController2D : MonoBehaviour
 	[Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;			// Amount of maxSpeed applied to crouching movement. 1 = 100%
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
 	[SerializeField] private bool m_AirControl = false;							// Whether or not a player can steer while jumping;
+	//[SerializeField] private bool doubleJumpActive = true;
 	[SerializeField] private LayerMask m_WhatIsGround;							// A mask determining what is ground to the character
 	[SerializeField] private Transform m_GroundCheck;							// A position marking where to check if the player is grounded.
 	[SerializeField] private Transform m_CeilingCheck;							// A position marking where to check for ceilings
@@ -14,6 +15,13 @@ public class CharacterController2D : MonoBehaviour
 
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
+
+	private bool doublejump;
+
+	public bool doubleJumpActive = true;
+
+
+
 	const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
@@ -63,6 +71,8 @@ public class CharacterController2D : MonoBehaviour
 
 	public void Move(float move, bool crouch, bool jump)
 	{
+
+		
 		// If crouching, check to see if the character can stand up
 		if (!crouch)
 		{
@@ -124,12 +134,89 @@ public class CharacterController2D : MonoBehaviour
 			}
 		}
 		// If the player should jump...
-		if (m_Grounded && jump)
+		// if (m_Grounded && jump)
+		// {
+		// 	// Add a vertical force to the player.
+		// 	m_Grounded = false;
+		// 	//m_Rigidbody2D.velocity.y=0;
+		// 	m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+		// 	//doubleJump = true;
+		// }
+
+// if (jump)
+// 		{
+// 			if(m_Grounded)
+// 			{
+
+// 			// Add a vertical force to the player.
+// 			m_Grounded = false;
+// 			//m_Rigidbody2D.velocity.y=0;
+			
+// 			m_Rigidbody2D.velocity=new Vector2(m_Rigidbody2D.velocity.x,0);
+// 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+// 			doublejump = true;
+// 			}else{
+
+// 				if(doublejump){
+// 					doublejump =false;
+// 					//m_Rigidbody2D.velocity=new Vector2(m_Rigidbody2D.velocity.x,0);
+// 					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+// 				}
+
+// 			}
+			
+			
+// 		}
+
+		//ActivateDoubleJump();
+		Debug.Log(doubleJumpActive);
+
+		if(!doubleJumpActive){
+
+			if (m_Grounded && jump)
 		{
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 		}
+
+
+		}else{
+
+			if (jump)
+		{
+			if(m_Grounded)
+			{
+
+			// Add a vertical force to the player.
+			m_Grounded = false;
+			//m_Rigidbody2D.velocity.y=0;
+			
+			m_Rigidbody2D.velocity=new Vector2(m_Rigidbody2D.velocity.x,0);
+			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			doublejump = true;
+			}else{
+
+				if(doublejump){
+					doublejump =false;
+					//m_Rigidbody2D.velocity=new Vector2(m_Rigidbody2D.velocity.x,0);
+					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+				}
+
+			}
+			
+			
+		}
+		}
+
+
+
+		
+		//m_Grounded = false;
+
+
+
+
 	}
 
 
@@ -140,4 +227,13 @@ public class CharacterController2D : MonoBehaviour
 
 		transform.Rotate(0f, 180f, 0f);
 	}
+
+
+	public void ActivateDoubleJump(){
+
+		doubleJumpActive = true;
+
+	}
+
+
 }
