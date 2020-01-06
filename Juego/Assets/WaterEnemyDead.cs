@@ -25,7 +25,7 @@ public class WaterEnemyDead : MonoBehaviour
     {
         if (collision.CompareTag("Sword"))
         {
-            TakeDamage(5);
+            TakeDamage(12);
         }
         if (health <= 0)
         {
