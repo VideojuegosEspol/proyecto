@@ -18,9 +18,12 @@ public class PlayerMovement : MonoBehaviour
     public GameObject sword;
 
     public static float life = 300; 
-
+   
 
     private bool fireBallSkill = false;
+
+
+    
 
 
     // Start is called before the first frame update
@@ -35,8 +38,13 @@ public class PlayerMovement : MonoBehaviour
 
 
         if (Input.GetButtonDown("Jump")){
+            
             jump = true;
             animator.SetBool("IsJumping",true);
+            
+            
+
+
         }if(Input.GetButtonDown("Fire2")){
             
             //animator.SetBool("IsAttacking",true);
@@ -75,8 +83,12 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate(){
         //Move character
+        
         controller.Move(HorizontalMove*Time.fixedDeltaTime ,false,jump);
+        
         jump=false;
+        
+        
 
     }
 
