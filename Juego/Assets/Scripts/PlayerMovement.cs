@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject sword;
 
     public static float life = 300; 
-
+   
 
     private bool fireBallSkill = false;
 
