@@ -19,7 +19,7 @@ public class AzarInfernal : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (timer <= 0)
-        {
+        {            
             animator.SetTrigger("Atk1");
         }
         else

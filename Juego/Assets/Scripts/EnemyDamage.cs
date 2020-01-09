@@ -13,8 +13,9 @@ public class EnemyDamage : MonoBehaviour
         if (collision.tag == "Player")
         {
             //Aqui iria la variable vida del Player 
-      //      animator = player.GetComponent<Animator>();
+            //      animator = player.GetComponent<Animator>();
             //PlayerMovement.animator.SetBool("IsJumping",true);
+            
 
             PlayerMovement playerMovement = collision.GetComponent<PlayerMovement>();
             StartCoroutine(playerMovement.hurtAnimation());
@@ -22,6 +23,7 @@ public class EnemyDamage : MonoBehaviour
             Debug.Log(PlayerMovement.life);
             HealthBar.Heath = PlayerMovement.life;
             PlayerMovement.evaluate();
+            SoundManager.PlaySound("classic_hurt");
         }
     }
 }

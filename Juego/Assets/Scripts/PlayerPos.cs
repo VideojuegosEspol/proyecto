@@ -17,6 +17,7 @@ public class PlayerPos : MonoBehaviour
     {
         if (other.tag == "Abismo")
         {
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
