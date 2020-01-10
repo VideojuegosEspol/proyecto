@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7936185233863751038}
   - component: {fileID: 8266886008699463658}
   - component: {fileID: -7674761705910998350}
+  - component: {fileID: 3474481871201822161}
   m_Layer: 0
   m_Name: gun
   m_TagString: Enemy
@@ -134,3 +135,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.645
+--- !u!114 &3474481871201822161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5715827008832528864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e351c5cb6bef4ce47bb1476f5d35df78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 12

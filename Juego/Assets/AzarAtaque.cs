@@ -13,7 +13,9 @@ public class AzarAtaque : StateMachineBehaviour
         if (rand ==0)
         {
             animator.SetTrigger("Infernal");
-        }else
+            SoundManager.PlaySound("INFERNAL");
+        }
+        else
         {
             animator.SetTrigger("Atk1");
         }

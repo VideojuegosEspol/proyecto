@@ -20,8 +20,6 @@ public class AzarDisparo : StateMachineBehaviour
     {
         if (timer <= 0) {
             animator.SetTrigger("Infernal");
-            SoundManager.PlaySound("INFERNAL");
-
         }
         else
         {
