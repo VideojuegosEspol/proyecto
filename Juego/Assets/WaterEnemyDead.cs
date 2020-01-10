@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaterEnemyDead : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class WaterEnemyDead : MonoBehaviour
 
     
     public Animator animacion;
-    
+
+    public Slider healthBar;
 
     private void Update()
     {
@@ -18,14 +20,15 @@ public class WaterEnemyDead : MonoBehaviour
         {
             timeBtwDamage -= Time.deltaTime;
         }
-        
+
+        healthBar.value = health;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Sword"))
         {
-            TakeDamage(12);
+            TakeDamage(8);
         }
         if (health <= 0)
         {
@@ -39,6 +42,7 @@ public class WaterEnemyDead : MonoBehaviour
         health -= lessdamage;
     }
 
+
     public void Died()
     {
 
@@ -47,6 +51,8 @@ public class WaterEnemyDead : MonoBehaviour
         Destroy(this.gameObject);
 
     }
+
+
 
     public bool NoHealt()
     {

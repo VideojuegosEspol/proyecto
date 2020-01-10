@@ -169,7 +169,7 @@ public class CharacterController2D : MonoBehaviour
 // 		}
 
 		//ActivateDoubleJump();
-		Debug.Log(doubleJumpActive);
+//		Debug.Log(doubleJumpActive);
 
 		if(!doubleJumpActive){
 
