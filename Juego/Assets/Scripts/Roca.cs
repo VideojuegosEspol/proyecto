@@ -10,9 +10,6 @@ public class Roca : MonoBehaviour
         Destroy(gameObject, 3f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
+    
 }

@@ -39,18 +39,22 @@ public class SoundManager : MonoBehaviour
                 audioSrc.PlayOneShot(DisparoFuego);
                 break;
             case "INFERNAL":
+                audioSrc.volume = 0.2f;
                 audioSrc.PlayOneShot(INFERNAL);
                 break;
             case "MuerteBoss":
                 audioSrc.PlayOneShot(MuerteBoss);
                 break;
             case "PowerUpMedallon":
+                audioSrc.volume = 0.9f;
                 audioSrc.PlayOneShot(PowerUp);
                 break;
             case "Vida":
+                audioSrc.volume = 0.7f;
                 audioSrc.PlayOneShot(Vida);
                 break;
             case "Aplastar":
+                audioSrc.volume = 0.8f;
                 audioSrc.PlayOneShot(aplastar);
                 break;
             case "Tornado":
@@ -61,6 +65,7 @@ public class SoundManager : MonoBehaviour
                 break;
             case "classic_hurt":
                 audioSrc.PlayOneShot(hurt);
+                audioSrc.volume = 0.2f;
                 break;
             case "lava":
                 audioSrc.PlayOneShot(lava);

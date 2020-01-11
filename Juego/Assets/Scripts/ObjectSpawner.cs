@@ -8,10 +8,7 @@ public class ObjectSpawner : MonoBehaviour{
 	public float spamnRate = 2f;
 	float nextSpamn = 0.0f;
 
-    void Start()
-    {
-        
-    }
+   
     void Update(){
 		if(Time.time > nextSpamn){
 			nextSpamn = Time.time + spamnRate;
