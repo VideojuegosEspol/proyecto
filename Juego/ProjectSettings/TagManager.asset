@@ -12,6 +12,8 @@ TagManager:
   - Sword
   - Vida
   - Enemy
+  - FireBall
+  - ShieldObj
   layers:
   - Default
   - TransparentFX

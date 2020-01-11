@@ -8,6 +8,8 @@ public class BehaviourEW : MonoBehaviour
     public Transform player;
     public Animator animacion;
 
+    
+
     // Update is called once per frame
     void Update()
     {
@@ -21,6 +23,11 @@ public class BehaviourEW : MonoBehaviour
             
             animacion.SetTrigger("Attack");
             //Debug.Log("Funciona");
+        }
+        if (Mathf.Abs(direction.x) < 4)
+        {
+            //transform.parent.gameObject.GetComponent<sh>().enabled = false;
+            animacion.SetTrigger("Shield");
         }
         else
         {
