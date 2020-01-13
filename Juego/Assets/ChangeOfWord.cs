@@ -19,9 +19,15 @@ public class ChangeOfWord : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Player" && SceneManager.GetActiveScene().name == "WaterWorld")
         {
             SceneManager.LoadScene("AirWorld", LoadSceneMode.Single);
+
+        }
+        else if (other.gameObject.tag == "Player" && SceneManager.GetActiveScene().name == "IntroWorld")
+        {
+            SceneManager.LoadScene("WaterWorld", LoadSceneMode.Single);
+
         }
     }
 }
