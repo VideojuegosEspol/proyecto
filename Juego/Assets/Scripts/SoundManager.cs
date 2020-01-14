@@ -7,7 +7,7 @@ public class SoundManager : MonoBehaviour
 
     public static AudioClip choqueFuego, DisparoFuego, INFERNAL, 
                             MuerteBoss, PowerUp,Vida, aplastar,
-                            tornado, Save, hurt, lava;
+                            tornado, Save, hurt, lava, Lectura;
     static AudioSource audioSrc;
 
     // Start is called before the first frame update
@@ -24,6 +24,7 @@ public class SoundManager : MonoBehaviour
         Save = Resources.Load<AudioClip>("Save");
         hurt = Resources.Load<AudioClip>("classic_hurt");
         lava = Resources.Load<AudioClip>("lava");
+        Lectura = Resources.Load<AudioClip>("Lectura");
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -39,7 +40,7 @@ public class SoundManager : MonoBehaviour
                 audioSrc.PlayOneShot(DisparoFuego);
                 break;
             case "INFERNAL":
-                audioSrc.volume = 0.2f;
+                audioSrc.volume = 0.1f;
                 audioSrc.PlayOneShot(INFERNAL);
                 break;
             case "MuerteBoss":
@@ -65,10 +66,14 @@ public class SoundManager : MonoBehaviour
                 break;
             case "classic_hurt":
                 audioSrc.PlayOneShot(hurt);
-                audioSrc.volume = 0.2f;
+                audioSrc.volume = 0.3f;
                 break;
             case "lava":
                 audioSrc.PlayOneShot(lava);
+                break;
+            case "Lectura":
+                audioSrc.PlayOneShot(Lectura);
+                audioSrc.volume = 0.6f;
                 break;
         }
     }

@@ -10,7 +10,7 @@ public class Boss : MonoBehaviour
     private float timeBtwDamage = 1.5f;
 
     //public Animator redPanel;
-    //public Animator camAnim;
+    private Animator bossAnimator;
     public Slider healthBar;
 
     private void Update()
@@ -20,6 +20,7 @@ public class Boss : MonoBehaviour
             timeBtwDamage -= Time.deltaTime;
         }
         healthBar.value = health;
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
