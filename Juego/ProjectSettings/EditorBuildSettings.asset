@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WaterWorld.unity
     guid: 8f0e02ca852fd4647880529eb550d42e
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: 614fc791d62172b429eafb698bb055ee
   m_configObjects: {}

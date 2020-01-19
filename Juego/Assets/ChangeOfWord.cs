@@ -29,5 +29,10 @@ public class ChangeOfWord : MonoBehaviour
             SceneManager.LoadScene("WaterWorld", LoadSceneMode.Single);
 
         }
+        else if (other.gameObject.tag == "Player" && SceneManager.GetActiveScene().name == "AirWorld")
+        {
+            SceneManager.LoadScene("Creditos", LoadSceneMode.Single);
+
+        }
     }
 }
