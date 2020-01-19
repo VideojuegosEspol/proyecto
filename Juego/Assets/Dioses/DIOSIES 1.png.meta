@@ -1,0 +1,461 @@
+fileFormatVersion: 2
+guid: 7e8215a13e5186840b3c7d126d54c80a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8181427848037227835
+    second: DIOSIES 1_0
+  - first:
+      213: -8633722173837536675
+    second: DIOSIES 1_1
+  - first:
+      213: 6596220524364423748
+    second: DIOSIES 1_2
+  - first:
+      213: 1793761086708078345
+    second: DIOSIES 1_3
+  - first:
+      213: -3513868318926995002
+    second: DIOSIES 1_4
+  - first:
+      213: -6922649224009594295
+    second: DIOSIES 1_5
+  - first:
+      213: 4163611696767237336
+    second: DIOSIES 1_6
+  - first:
+      213: -5422710978075603485
+    second: DIOSIES 1_7
+  - first:
+      213: -1324990379106828174
+    second: DIOSIES 1_8
+  - first:
+      213: 8101606135676926345
+    second: DIOSIES 1_9
+  - first:
+      213: 5068653803438348547
+    second: DIOSIES 1_10
+  - first:
+      213: 8410610459347522118
+    second: DIOSIES 1_11
+  - first:
+      213: 2316162432071111427
+    second: DIOSIES 1_12
+  - first:
+      213: -3500142408238369169
+    second: DIOSIES 1_13
+  - first:
+      213: 4619312475412991995
+    second: DIOSIES 1_14
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DIOSIES 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1890
+        width: 532
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6518cc4dea69af4c82fa73b8b7c6902
+      internalID: -8181427848037227835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIOSIES 1_1
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1890
+        width: 532
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604e3767f25e3a2459cdb861f191c703
+      internalID: -8633722173837536675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIOSIES 1_2
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 1890
+        width: 532
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affb63cf14425094fba0e1fb3efaf470
+      internalID: 6596220524364423748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIOSIES 1_3
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 1890
+        width: 532
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f956882ca8fce4f81a7b3e87ec8ee4
+      internalID: 1793761086708078345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIOSIES 1_4
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 1890
+        width: 532
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0cc12f71df09724b9fce65d7d3848a9
+      internalID: -3513868318926995002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIOSIES 1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 945
+        width: 532
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3aef98131db5c84b93c6212f7ea6c3c
+      internalID: -6922649224009594295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIOSIES 1_6
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 945
+        width: 532
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a3934c457b6c14ead38c9c249d1096
+      internalID: 4163611696767237336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIOSIES 1_7
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 945
+        width: 532
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611178532768e2d4eb6c6aa56ed104f8
+      internalID: -5422710978075603485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIOSIES 1_8
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 945
+        width: 532
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e99838e95df8984785c3465ae4e8038
+      internalID: -1324990379106828174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIOSIES 1_9
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 945
+        width: 532
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91942ca2b4054d348bfd474a507527fc
+      internalID: 8101606135676926345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIOSIES 1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 532
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d558570ac7837434dac90f50f6d87a1a
+      internalID: 5068653803438348547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIOSIES 1_11
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 0
+        width: 532
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1e8da974d1337429644a92f18a7906
+      internalID: 8410610459347522118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIOSIES 1_12
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 0
+        width: 532
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46831229ad8ceb14f9c8af87d47915cf
+      internalID: 2316162432071111427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIOSIES 1_13
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 0
+        width: 532
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd20eff72bba0c94585db6b47482cf54
+      internalID: -3500142408238369169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DIOSIES 1_14
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 0
+        width: 532
+        height: 945
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9b2a07c52dca64dbde0d554447beac
+      internalID: 4619312475412991995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f5aac32766f2cda4eb8bb562b234a4ff
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
