@@ -20,6 +20,6 @@ public class HealthBar : MonoBehaviour
         
         float UpdateLife = Mathf.MoveTowards(rectTransform.rect.height, Heath, 5.0f);
 
-        rectTransform.sizeDelta = new Vector2(100f, Mathf.Clamp(UpdateLife, 0.0f, 100f));
+        rectTransform.sizeDelta = new Vector2(300f, Mathf.Clamp(UpdateLife, 0.0f, 100f));
     }
 }
