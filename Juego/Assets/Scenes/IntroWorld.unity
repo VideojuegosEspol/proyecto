@@ -52332,7 +52332,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
-    m_FontSize: 60
+    m_FontSize: 45
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -58865,7 +58865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textfield: {fileID: 309514371}
-  frase: "Si pierde todo el color, regresar\xE1s al \xFAltimo checkpoint"
+  frase: Si pierde todo el color, regresaras al ultimo checkpoint
 --- !u!1 &1341219047
 GameObject:
   m_ObjectHideFlags: 0
@@ -59901,7 +59901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textfield: {fileID: 309514371}
-  frase: El medidor de vida se encuentra en la parte de arriba
+  frase: El medidor de vida se encuentra en la parte superior
 --- !u!1 &1888743981
 GameObject:
   m_ObjectHideFlags: 0
