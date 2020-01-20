@@ -394,10 +394,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Battle World\n\n\n\n\n\n\n\n\nUn juego desarrollado por Polit\xE9cnicos\nESPOL\n\n\n\nDIRECTOR
+  m_Text: "Elemental Battle\n\n\n\n\n\n\n\n\nUn juego desarrollado por Polit\xE9cnicos\nESPOL\n\n\n\nDIRECTOR
     DE PROYECTO\nMiguel Angel Rivas Morales\n\n\nDISE\xD1ADOR CREATIVO/DESARROLLADOR
     \nNeythan Le\xF3n V\xE1squez\n\n\nDISE\xD1ADOR CREATIVO/DESARROLLADOR \nJuan Jimenez\n\n\nDISE\xD1DOR
-    CREATIVO/DESARROLLADOR \nRoger A"
+    CREATIVO/DESARROLLADOR \nRoger Avil\xE9s"
 --- !u!222 &1397987573
 CanvasRenderer:
   m_ObjectHideFlags: 0
