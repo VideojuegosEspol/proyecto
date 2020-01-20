@@ -10,15 +10,15 @@ public class EnemyDamage : MonoBehaviour
     //private Animator animator;
     private void OnTriggerEnter2D(Collider2D collision)
     {   
-        if (collision.name == "BodyCollider")
+        if (collision.tag == "Player")
         {
             //Aqui iria la variable vida del Player 
             //      animator = player.GetComponent<Animator>();
             //PlayerMovement.animator.SetBool("IsJumping",true);
             
-            Debug.Log("hol");
-            PlayerMovement playerMovement = collision.GetComponent<PlayerMovement>();
-            StartCoroutine(playerMovement.hurtAnimation());
+
+            //PlayerMovement playerMovement = collision.GetComponent<PlayerMovement>();
+            //StartCoroutine(playerMovement.hurtAnimation());
             PlayerMovement.life -= damage;
             Debug.Log(PlayerMovement.life);
             HealthBar.Heath = PlayerMovement.life;
