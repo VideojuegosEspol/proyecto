@@ -21,7 +21,7 @@ public class EnemyDamage : MonoBehaviour
             //StartCoroutine(playerMovement.hurtAnimation());
             PlayerMovement.life -= damage;
             Debug.Log(PlayerMovement.life);
-            HealthBar.Heath = PlayerMovement.life;
+            HealthBar.Heath = PlayerMovement.life/3;
             PlayerMovement.evaluate();
             SoundManager.PlaySound("classic_hurt");
         }
