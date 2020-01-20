@@ -132,6 +132,8 @@ GameObject:
   - component: {fileID: 755832799}
   - component: {fileID: 755832798}
   - component: {fileID: 755832797}
+  - component: {fileID: 755832802}
+  - component: {fileID: 755832801}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -219,6 +221,42 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &755832801
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755832796}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!320 &755832802
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755832796}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: de1ddeb44129eac4fa5bf9f317bf83a0, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1004624932
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,7 +394,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Battle World\n\n\nUn juego desarrollado por Polit\xE9cnicos\nESPOL\n\n\n\nDIRECTOR
+  m_Text: "Battle World\n\n\n\n\n\n\n\n\nUn juego desarrollado por Polit\xE9cnicos\nESPOL\n\n\n\nDIRECTOR
     DE PROYECTO\nMiguel Angel Rivas Morales\n\n\nDISE\xD1ADOR CREATIVO/DESARROLLADOR
     \nNeythan Le\xF3n V\xE1squez\n\n\nDISE\xD1ADOR CREATIVO/DESARROLLADOR \nJuan Jimenez\n\n\nDISE\xD1DOR
     CREATIVO/DESARROLLADOR \nRoger A"
