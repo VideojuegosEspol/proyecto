@@ -168,7 +168,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(life<=0){
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            life=100;
+            life=300;
         }
 
     }
