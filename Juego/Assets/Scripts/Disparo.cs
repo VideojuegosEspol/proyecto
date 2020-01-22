@@ -24,9 +24,16 @@ public class Disparo : MonoBehaviour
     {
         if (col.CompareTag("Player")){
             //PlayerLife.life -=damage;
-            PlayerMovement.life-= damage;
+            PlayerMovement.life -= damage;
+            Debug.Log(PlayerMovement.life);
+            HealthBar.Heath = PlayerMovement.life / 3;
             Destroy(this.gameObject);
             PlayerMovement.evaluate();
+            SoundManager.PlaySound("classic_hurt");
+
+            /*PlayerMovement.life-= damage;
+            Destroy(this.gameObject);
+            PlayerMovement.evaluate();*/
 
         }
     }
